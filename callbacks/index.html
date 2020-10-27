@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>HAZME CLICK</button>
+
+    <script>
+
+        const applyNormatVat = ssubtotal => console.log("El total del presupuesto es", subtotal * 1.21)
+        const applyReducedVat = subtotal => console.log("El total del presupuesto es", subtotal * 1.1)
+        const applyExentVat = subtotal => console.log("El total del presupuesto es", subtotal)
+
+        const getTotal = (cost, action) => {
+            const benefit = cost * .1
+            const subtotal = cost + benefit
+
+            console.log('En realidad, el segundo argumento no es un tipo de dato usual; Es una', typeof action)
+            // callback invoke
+            action(subtotal)
+        }
+
+        getTotal(100, applyExentVat)
+        getTotal(1000, applyReducedVat)
+        getTotal(200, applyNormatVat)
+
+
+
+    </script>
+</body>
+
+</html>
