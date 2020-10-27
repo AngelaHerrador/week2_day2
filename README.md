@@ -29,5 +29,5 @@ Su estructura se basa en un prefijo `data-` seguido de un sufijo a elección, cu
 
 ````javascript
 const colorValue = document.querySelector('#first').dataset.color   // red
-const colorValue = document.querySelector('#second').dataset.age    // 81
+const ageValue = document.querySelector('#second').dataset.age    // 81
 ````
